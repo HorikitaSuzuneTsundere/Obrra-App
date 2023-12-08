@@ -5,7 +5,7 @@ import { authModalState } from '../../../atoms/authModalAtom';
 import Login from './Login';
 import SignUp from './SignUp';
 
-type AuthInputsProps = {};
+type AuthInputsProps = NonNullable<unknown>;
 
 const AuthInputs:React.FC<AuthInputsProps> = () => {
   const modalState = useRecoilValue(authModalState);
