@@ -55,5 +55,7 @@ Safe JSON Stringify (String manipulation library)
 ## Appendix
 
 **Lua:** Experimented with Lua scripting for automation and program extensions.
+
 **Neovim/Vim:** Explored configuration with Lua scripting for personalized editing.
+
 **Powershell/Terminal:** Learned basic and advanced commands for automation.
