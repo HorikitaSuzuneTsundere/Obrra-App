@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/open-sans": "^5.0.17",
     "firebase": "^10.5.2",
+    "firebase-functions": "^4.5.0",
     "framer-motion": "^6.5.1",
     "moment": "^2.29.4",
     "next": "14.0.1",
