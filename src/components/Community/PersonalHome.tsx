@@ -1,6 +1,5 @@
+import { Button, Flex, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
-import { Button, Flex, Icon, Stack, Text, Image } from "@chakra-ui/react";
-import { FaYarn } from "react-icons/fa";
 
 const PersonalHome: React.FC = () => {
 	return (
