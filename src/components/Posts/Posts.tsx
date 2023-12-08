@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useState } from "react";
 import { Community } from "../../atoms/communitiesAtom";  
 import { collection, getDocs, orderBy, query, where } from "firebase/firestore";

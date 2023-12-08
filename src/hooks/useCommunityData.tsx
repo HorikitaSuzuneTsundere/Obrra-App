@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { useRecoilState, useSetRecoilState } from "recoil";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
-  Community,
-  CommunitySnippet,
-  communityState,
-} from "../atoms/communitiesAtom";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { auth, firestore } from "../firebase/clientApp";
-import {
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  increment,
-  writeBatch,
+    collection,
+    doc,
+    getDoc,
+    getDocs,
+    increment,
+    writeBatch,
 } from "firebase/firestore";
-import { authModalState } from "../atoms/authModalAtom";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useRecoilState, useSetRecoilState } from "recoil";
+import { authModalState } from "../atoms/authModalAtom";
+import {
+    Community,
+    CommunitySnippet,
+    communityState,
+} from "../atoms/communitiesAtom";
+import { auth, firestore } from "../firebase/clientApp";
 
 const useCommunityData = () => {
   const [user] = useAuthState(auth);
@@ -25,7 +26,7 @@ const useCommunityData = () => {
     useRecoilState(communityState);
   const setAuthModalState = useSetRecoilState(authModalState);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  const [, setError] = useState("");
 
   const onJoinOrLeaveCommunity = (
     communityData: Community,

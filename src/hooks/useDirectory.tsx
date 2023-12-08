@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-import { useRecoilState, useRecoilValue } from "recoil";
-import {
-  DirectoryMenuItem,
-  directoryMenuState,
-} from "../atoms/directoryMenuAtom";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import { FaYarn } from "react-icons/fa";
+import { useRecoilState, useRecoilValue } from "recoil";
 import { communityState } from "../atoms/communitiesAtom";
+import {
+    DirectoryMenuItem,
+    directoryMenuState,
+} from "../atoms/directoryMenuAtom";
 
 const useDirectory = () => {
   const [directoryState, setDirectoryState] =

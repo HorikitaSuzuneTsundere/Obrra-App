@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from "react";
 import { Post } from "../../atoms/postsAtom";
 import { AiOutlineDelete } from "react-icons/ai";

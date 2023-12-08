@@ -1,7 +1,7 @@
 import { Stack, Box, SkeletonText, Skeleton } from "@chakra-ui/react";
 import React from "react";
 
-type PostLoaderProps = {};
+type PostLoaderProps = NonNullable<unknown>;
 
 const PostLoader: React.FC<PostLoaderProps> = () => {
   return (
