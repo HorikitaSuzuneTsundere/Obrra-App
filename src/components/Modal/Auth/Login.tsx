@@ -6,7 +6,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from "../../../firebase/clientApp";
 import { FIREBASE_ERRORS } from '../../../firebase/errors';
 
-type LoginProps = {};
+type LoginProps = NonNullable<unknown>;
 
 const Login:React.FC<LoginProps> = () => {
   const setAuthModalState = useSetRecoilState(authModalState);
@@ -14,7 +14,7 @@ const Login:React.FC<LoginProps> = () => {
     email: "",
     password: "",
   });
-  const [signInWithEmailAndPassword, user, loading, error] =
+  const [signInWithEmailAndPassword,, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
   // Firebase logic
