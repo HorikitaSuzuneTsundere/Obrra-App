@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Obrra
 
-First, run the development server:
+Obrra is a social media app inspired by Reddit, specifically designed to promote Filipino artists and their talents. It aims to create a unique platform and welcoming community where artists can collaborate, share their work, and connect with a supportive audience. By offering a dedicated space for Filipino artists, Obrra hopes to foster creativity, encourage collaboration, and celebrate the diverse artistic talent within the Philippines.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![App Screenshot](https://github.com/HorikitaSuzuneTsundere/Obrra-App/blob/master/Screenshots.jpg?raw=true)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Features
 
-## Learn More
+- Post creation
+- Community creation
+- Comment and reply
+- Editing and deleting
+- User accounts
+- Upvote/downvote system
+- Rules and Moderation
+- Responsive
+- Data privacy and security
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Lessons Learned
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+While building this project, I significantly expanded my skillset in React and Node.js. I also delved into new technologies like Chakra UI, Firebase, TypeScript, and Recoil, pushing my boundaries as a developer. Inevitably, I encountered challenging bugs that took days to resolve. Through this process, I honed my problem-solving skills, leveraging online resources, meticulous code backups, extensive documentation review, and countless hours of dedicated analysis. This project proved to be a fun and rewarding experience, fostering my growth as a developer and encouraging me to tackle challenges independently before seeking external support.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Acknowledgements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ - [Special thanks to Shadee Merhi](https://discord.com/invite/Vs6HGMRPFs)
+
+
+## Tech Stack
+
+**Frontend:**
+Next.js (React framework)
+React
+Chakra UI (Styling and components)
+Emotion (Styling library)
+Framer Motion (Animation library)
+React Icons (Icon library)
+Recoil (State management library)
+
+**Styling:** Tailwind CSS (Utility-first CSS framework)
+
+**Database:** Firebase
+
+**Utilities:**
+Moment (Date/time library)
+Safe JSON Stringify (String manipulation library)
+
+
+## Appendix
+
+**Lua:** Experimented with Lua scripting for automation and program extensions.
+**Neovim/Vim:** Explored configuration with Lua scripting for personalized editing.
+**Powershell/Terminal:** Learned basic and advanced commands for automation.
