@@ -4,7 +4,7 @@ import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { auth } from "../../../firebase/clientApp";
 
 const OAuthButtons:React.FC = () => {
-  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const [signInWithGoogle,, loading, error] = useSignInWithGoogle(auth);
   return (
     <Flex direction="column" width="100%" mb={4}>
       <Button

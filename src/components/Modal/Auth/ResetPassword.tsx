@@ -28,7 +28,7 @@ const ResetPassword: React.FC = () => {
       ) : (
         <>
           <Text fontSize={14} textAlign='left' mb={4}>
-            Let us know the email associated with your Obrra account, and we'll deliver an email to you containing a link to initiate the password reset.
+            Let us know the email associated with your Obrra account, and we will deliver an email to you containing a link to initiate the password reset.
           </Text>
           <form onSubmit={onSubmit} style={{ width: '100%' }}>
             <Input

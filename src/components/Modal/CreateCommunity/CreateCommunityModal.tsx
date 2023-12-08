@@ -1,11 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Box, Button, Checkbox, Divider, Flex, Icon, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Stack, Text } from '@chakra-ui/react';
-import { doc, getDoc, runTransaction, serverTimestamp, setDoc } from 'firebase/firestore';
+import { doc, runTransaction, serverTimestamp } from 'firebase/firestore';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { BsFillEyeFill, BsFillPersonFill } from 'react-icons/bs';
 import { HiLockClosed } from "react-icons/hi";
 import { auth, firestore } from '../../../firebase/clientApp';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { useRouter } from 'next/router';
 import useDirectory from '../../../hooks/useDirectory';
 
 type CreateCommunityModalProps = {
@@ -43,7 +44,7 @@ const CreateCommunityModal:React.FC<CreateCommunityModalProps> = ({
   const handleCreateCommunity = async () => {
     if (error) setError("");
     // Validate the community
-    const format = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+    const format = /[ `!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?~]/;
     if (format.test(communityName) || communityName.length < 3) {
       setError(
         "Community names should range from 3 to 21 characters and can only include letters, numbers, or underscores."
