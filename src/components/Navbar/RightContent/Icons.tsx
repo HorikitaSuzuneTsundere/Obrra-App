@@ -6,6 +6,7 @@ import {
   IoNotificationsOutline,
   IoVideocamOutline,
 } from 'react-icons/io5';
+import React from 'react';
 
 const Icons: React.FC = () => {
   return (

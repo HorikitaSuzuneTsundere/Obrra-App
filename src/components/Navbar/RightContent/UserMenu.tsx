@@ -1,26 +1,24 @@
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import {
-  Button,
-  Flex,
-  Icon,
-  Menu,
-  MenuButton,
-  MenuDivider,
-  MenuItem,
-  MenuList,
-  Text,
+    Flex,
+    Icon,
+    Menu,
+    MenuButton,
+    MenuDivider,
+    MenuItem,
+    MenuList,
+    Text
 } from "@chakra-ui/react";
 import { User, signOut } from "firebase/auth";
 import React from "react";
-import { IoLogoOctocat } from "react-icons/io";
-import { VscAccount } from "react-icons/vsc";
-import { IoSparkles } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
+import { IoLogoOctocat } from "react-icons/io";
+import { IoSparkles } from "react-icons/io5";
 import { MdOutlineLogin } from "react-icons/md";
-import { auth } from "../../../firebase/clientApp";
+import { VscAccount } from "react-icons/vsc";
+import { useSetRecoilState } from "recoil";
 import { authModalState } from "../../../atoms/authModalAtom";
-import { useResetRecoilState, useSetRecoilState } from "recoil";
-import { communityState } from "../../../atoms/communitiesAtom";
+import { auth } from "../../../firebase/clientApp";
 
 type UserMenuProps = {
   user?: User | null;

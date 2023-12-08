@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
 import { User } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { Post, postState } from "../../../atoms/postsAtom";

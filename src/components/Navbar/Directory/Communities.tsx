@@ -7,7 +7,7 @@ import { communityState } from "../../../atoms/communitiesAtom";
 import MenuListItem from "./MenuListItem";
 import { FaYarn } from "react-icons/fa";
 
-type CommunitiesProps = {};
+type CommunitiesProps = NonNullable<unknown>;
 
 const Communities: React.FC<CommunitiesProps> = () => {
   const [open, setOpen] = useState(false);
